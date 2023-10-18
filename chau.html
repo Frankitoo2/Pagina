@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tecnicatura en Informática</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #container {
+            border: 4px solid #008000;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #header {
+            display: flex;
+            align-items: center;
+            background-color: #008000;
+            color: #fff;
+            padding: 10px;
+        }
+
+        #logo {
+            width: 150px;
+            margin: 0 auto; /* Centra el logo horizontalmente */
+        }
+
+        #menu {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+        }
+
+        li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        li a:hover {
+            color: #0059b3;
+        }
+
+        li ul {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 4px solid #008000;
+            border-radius: 10px;
+            padding: 10px;
+            top: 100%;
+            left: 0;
+            z-index: 1;
+        }
+
+        li:hover ul {
+            display: block;
+        }
+
+        li ul li {
+            display: block;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+
+        #content {
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        h2 {
+            color: #000;
+        }
+
+        .info-section {
+            background-color: #fff;
+            border: 4px solid #008000;
+            border-radius: 10px;
+            margin: 20px 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <a href="https://campusfameghino.edua.ar/login/index.php"><img id="logo" src="https://sitio.fameghino.com.ar/wp-content/uploads/2020/06/logo_ameghino_blanco-1.svg" alt="Imagen de encabezado"></a>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Acerca de la escuela</a></li>
+                    <li>
+                        <a href="https://frankitoo2.github.io/Pagina/campusdefinitivo.html#">Niveles educativos</a>
+                        <ul>
+                            <li><a href="https://frankitoo2.github.io/Pagina/campusdefinitivo.html#">Jardín</a></li>
+                            <li><a href="https://frankitoo2.github.io/Pagina/campusdefinitivo.html#">Primaria</a></li>
+                            <li><a href="https://frankitoo2.github.io/Pagina/campusdefinitivo.html#">Secundaria</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="https://frankitoo2.github.io/Pagina/campusdefinitivo.html#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="info-section">
+            <h2>Tecnicatura en Informática</h2>
+            <p>
+                Bienvenido a la Tecnicatura en Informática de la Escuela Florentino Ameghino. Aquí encontrarás información sobre nuestro programa de estudios y requisitos de admisión.
+            </p>
+            <p>
+                La Tecnicatura en Informática está diseñada para proporcionar a los estudiantes las habilidades necesarias en programación, desarrollo de software, administración de bases de datos y más. ¡Únete a nosotros y prepárate para una emocionante carrera en el campo de la informática!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
