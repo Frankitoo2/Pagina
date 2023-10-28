@@ -81,6 +81,8 @@
             background-color: #008000;
             color: #fff;
             padding: 10px;
+            justify-content: space-between;
+            position: relative;
         }
 
         #logo {
@@ -90,6 +92,20 @@
 
         #menu {
             text-align: center;
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            border: 2px solid #008000;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        #header:hover #menu {
+            display: block;
         }
 
         ul {
@@ -98,8 +114,7 @@
         }
 
         li {
-            display: inline;
-            margin-right: 20px;
+            display: block;
         }
 
         li a {
@@ -108,24 +123,21 @@
             font-weight: bold;
             font-size: 18px;
             transition: color 0.3s;
+            display: block;
+            padding: 10px;
         }
 
         li a:hover {
             color: #0059b3;
         }
 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
         .dropdown-content {
             display: none;
-            position: absolute;
-            background-color: #fff;
-            min-width: 160px;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-            z-index: 1;
+            position: relative;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
         }
 
         .dropdown-content a {
@@ -151,25 +163,15 @@
                 transform: translateY(0);
             }
         }
-
-        .logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 150px;
-            height: auto;
-        }
     </style>
 </head>
 
 <body>
-    <a href="https://campusfameghino.edua.ar/login/index.php">
-        <img class="logo" src="https://sitio.fameghino.com.ar/wp-content/uploads/2020/06/logo_ameghino_blanco-1.svg" alt="Logo">
-    </a>
     <div id="container">
         <div id="header">
             <a href="https://campusfameghino.edua.ar/login/index.php">
-                <img id="logo" src="https://sitio.fameghino.com.ar/wp-content/uploads/2020/06/logo_ameghino_blanco-1.svg" alt="Imagen de encabezado">
+                <img id="logo" src="https://sitio.fameghino.com.ar/wp-content/uploads/2020/06/logo_ameghino_blanco-1.svg"
+                    alt="Imagen de encabezado">
             </a>
             <div id="menu">
                 <ul>
